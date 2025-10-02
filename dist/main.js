@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Model_js_1 = require("./src/mvc/Model.js");
+const View_js_1 = require("./src/mvc/View.js");
+const Controller_js_1 = require("./src/mvc/Controller.js");
+const JogadaFactory_1 = require("./src/patterns/factories/JogadaFactory");
+console.log("=== Bem vindo ao Pedra, Papel e Tesoura! ===");
+const JogadaFactory = JogadaFactory_1.FabricaDeJogadas.getFactory('classica');
+const model = new Model_js_1.GameModel(JogadaFactory);
+const view = new View_js_1.GameView();
+const controller = new Controller_js_1.GameController(model, view);
+controller.iniciarJogo();
