@@ -5,6 +5,7 @@ import {FabricaDeJogadas} from "./src/patterns/factories/JogadaFactory";
 
 // Print Inicial
 console.log("=== Bem vindo ao Pedra, Papel e Tesoura!! ===");
+console.log("=== Espero que se divirta Jogando!! ");
 
 const JogadaFactory = FabricaDeJogadas.getFactory('classica');
 
