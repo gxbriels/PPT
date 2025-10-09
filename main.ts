@@ -3,7 +3,8 @@ import {GameView} from "./src/mvc/View.js";
 import {GameController} from "./src/mvc/Controller.js";
 import {FabricaDeJogadas} from "./src/patterns/factories/JogadaFactory";
 
-console.log("=== Bem vindo ao Pedra, Papel e Tesoura! ===");
+// Print Inicial
+console.log("=== Bem vindo ao Pedra, Papel e Tesoura!! ===");
 
 const JogadaFactory = FabricaDeJogadas.getFactory('classica');
 
