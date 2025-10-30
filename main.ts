@@ -7,6 +7,8 @@ import {FabricaDeJogadas} from "./src/patterns/factories/JogadaFactory";
 console.log("=== Bem vindo ao Pedra, Papel e Tesoura!! ===");
 console.log("=== Espero que se divirta Jogando!! ");
 
+// Novo teste com nova LLM do Codewise
+
 const JogadaFactory = FabricaDeJogadas.getFactory('classica');
 
 const model = new GameModel(JogadaFactory);
